@@ -20,3 +20,20 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+/* Styling for tables to improve the look of product lists */
+.table {
+  margin-top: 20px; /* Adds space above the table */
+}
+
+.table th {
+  background-color: #f8f9fa; /* Light gray background for table headers */
+}
+
+.table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Zebra striping for even rows */
+}
+
+.table tr:hover {
+  background-color: #e9ecef; /* Highlight row on hover */
+}

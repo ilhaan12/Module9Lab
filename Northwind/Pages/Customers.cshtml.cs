@@ -13,7 +13,7 @@ public class CustomersModel : PageModel{
         Customers = new List<CustomersModel>();
 
         //Create a connection string to connect to the database
-        string connectionString = "Server=localhost;Database=Northwind;UserId=sa;Password=P@ssw0rd; ; TrustServer"
+        string connectionString = "Server=localhost;Database=Northwind;UserId=sa;Password=P@ssw0rd; ; TrustServer";
 
         //Create our database connection
         using (SqlConnection connection = new SqlConnection(connectionString))
@@ -43,14 +43,16 @@ public class CustomersModel : PageModel{
                 }//end Get method
             }//end class
 
-        
-    
 
-//Customer classis a blueprint for a customer object & it represents a customer in our database
-public class Customer{
-    //Attributes (variables that hold the values that describe a customer)
-    public string CustomerID {get; set;}
-    public string CompanyName {get; set;}
-    public string ContactName {get; set;}
-    public string Country {get; set;}
+
+
+    //Customer classis a blueprint for a customer object & it represents a customer in our database
+    public class Customer
+    {
+        //Attributes (variables that hold the values that describe a customer)
+        public string CustomerID { get; set; }
+        public string CompanyName { get; set; }
+        public string ContactName { get; set; }
+        public string Country { get; set; }
+    }
 }
